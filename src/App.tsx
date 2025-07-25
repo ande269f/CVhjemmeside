@@ -1,10 +1,14 @@
-import './App.scss';
 
+import './App.scss';
+import { Provider } from "./components/ui/provider"
 function App() {
     return (
-        <div className="App">
-            <h1 style={{textAlign: 'center'}}>Hello world</h1>
-        </div>
+        <Provider>
+            <div className="App">
+                <h1 style={{textAlign: 'center'}}>Hello world</h1>
+            </div>
+        </Provider>
+
     );
 }
 
